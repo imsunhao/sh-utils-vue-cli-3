@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "inspect": "vue-cli-service inspect > output/inspect.js",
     "lint": "vue-cli-service lint --fix",
-    "test:unit": "vue-cli-service test:unit"
+    "inspect": "vue-cli-service inspect > output/inspect.js",
+    "test:unit": "vue-cli-service test:unit",
+    "ssr:serve": "vue-cli-service ssr:serve",
+    "ssr:build": "vue-cli-service ssr:build"
   },
   "dependencies": {
     "element-ui": "^2.4.5",
@@ -13,9 +15,11 @@
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@akryum/vue-cli-plugin-ssr": "^0.2.3",
     "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.0.3",
     "@vue/cli-plugin-typescript": "^3.0.3",
